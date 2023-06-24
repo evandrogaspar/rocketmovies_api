@@ -2,11 +2,15 @@ const { Router } = require("express")
 
 const MovieController = require("../controllers/MovieController")
 
+const verifyAuthentication = require("../middlewares/verifyAuthentication")
+
 const movieRoutes = Router()
 
 const movieController = new MovieController()
 
-movieRoutes.post("/:user_id", movieController.create)
+movieRoutes.use(verifyAuthentication)
+
+movieRoutes.post("/", movieController.create)
 
 movieRoutes.get("/", movieController.index)
 
