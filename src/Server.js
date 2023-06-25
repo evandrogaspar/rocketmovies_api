@@ -8,11 +8,16 @@ const routes = require("./routes")
 
 const AppError = require("./utils/AppError")
 
+//const uploadConfig = require("./configs/upload")
+
 const app = express()
 
 app.use(express.json())
 
 app.use(routes)
+
+//Para buscar arquivos estáticos no back-end
+//app.use("/files", express.static(uploadConfig.UPLOADS_FOLDER))
 
 
 migrationRun()
