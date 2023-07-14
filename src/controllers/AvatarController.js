@@ -27,7 +27,7 @@ class AvatarController {
     user.avatar = filename
 
     //Actualização do avatar do user na base de dados
-    await knex("users").update(user).where({ id : user_id})
+    await knex("users").update(user).where({ id: user_id})
 
     return response.json(user)
   }
