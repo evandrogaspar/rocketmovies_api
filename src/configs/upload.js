@@ -4,13 +4,13 @@ const multer = require("multer")
 const crypto = require("crypto")
 
 //Arquivo temporário
-const TMP_FOLDER = path.resolve(__dirname, "..","..", "tmp")
+const TMP_FOLDER = path.resolve(__dirname, "..", "..", "tmp")
 //Arquivo onde ficará permanentemente
 const UPLOADS_FOLDER = path.resolve(TMP_FOLDER, "uploads")
 
 const MULTER = {
   //Onde mandar o arquivo
-  Storage: multer.diskStorage({
+  storage: multer.diskStorage({
     destination:TMP_FOLDER,
     //configuração do nome do arquivo
     filename(request, file, callback){

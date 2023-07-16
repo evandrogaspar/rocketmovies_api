@@ -1,5 +1,5 @@
 {
-  "name": "movie_notes",
+  "name": "rocketmovies",
   "version": "1.0.0",
   "description": "Aplicação para cadastrar um filme",
   "main": "index.js",
