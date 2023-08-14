@@ -6,7 +6,8 @@
   "scripts": {
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon ./src/Server.js",
-    "migrate": "knex migrate:latest"
+    "migrate": "knex migrate:latest",
+    "test": "jest"
   },
   "author": "Evandro Gaspar",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "sqlite3": "^5.1.6"
   },
   "devDependencies": {
+    "jest": "^29.6.2",
     "nodemon": "^2.0.22"
   }
 }
