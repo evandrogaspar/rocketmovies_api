@@ -7,7 +7,7 @@
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "nodemon ./src/Server.js",
     "migrate": "knex migrate:latest",
-    "test": "jest"
+    "test": "jest --watch "
   },
   "author": "Evandro Gaspar",
   "license": "ISC",

@@ -2,7 +2,7 @@ module.exports = {
   bail: true,
   coverageProvider: "v8",
 
-  testMatch:[
+  testMatch: [
     "<rootDir>/src/**/*.spec.js"
-  ]
+  ],
 }
